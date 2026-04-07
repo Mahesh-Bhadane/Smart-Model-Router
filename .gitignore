@@ -1,0 +1,22 @@
+# Virtual environment - never commit this
+venv/
+.venv/
+env/
+
+# API keys and secrets - NEVER commit this
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
