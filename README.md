@@ -145,7 +145,7 @@ curl -X POST http://localhost:8000/route \
 | `GET` | `/logs` | Recent request history |
 | `GET` | `/memory/search?q=...` | Search past interactions |
 | `GET` | `/health` | Server status |
-| `GET` | `/docs` | Interactive API docs (auto-generated) |
+| `GET` | `/docs` | Interactive API docs (auto-generated) — try all endpoints in browser |
 
 ### Cost Dashboard
 
@@ -163,6 +163,20 @@ curl http://localhost:8000/dashboard
   "savings_percent": 83.3
 }
 ```
+
+### Interactive API Docs
+
+Open in your browser after starting the server:
+
+```
+http://localhost:8000/docs
+```
+
+You'll see all endpoints listed with a **"Try it out"** button — no curl needed. Just type a prompt and hit Execute.
+
+![FastAPI Swagger UI](https://fastapi.tiangolo.com/img/index/index-03-swagger-02.png)
+
+---
 
 ### Search Memory
 
